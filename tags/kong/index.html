@@ -144,7 +144,7 @@
             
         </h1>
         <div class="content">
-            <p>本篇文章主要讲述如何通过 kong 插件重写响应给客户端的消息体内容，以下内容基于 kong v1.4.x 版本，<a href="https://docs.konghq.com/1.4.x/" target="_blank" rel="noopener">官方文档</a>。</p>
+            <p>本篇文章主要讲述如何通过 kong 插件重写响应给客户端的消息体内容，以下内容基于 kong v1.4.x 版本，<a href="https://docs.konghq.com/1.4.x/">官方文档</a>。</p>
 <p>按照官方文档，可以通过以下指令来重写返回给客户端的消息体，但只有在特定阶段才能重写</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">kong.response.exit(status[, body[, headers]])</span><br><span class="line"></span><br><span class="line">Phase:</span><br><span class="line">rewrite, access, admin_api, header_filter (only if body is nil)</span><br></pre></td></tr></table></figure>
 
